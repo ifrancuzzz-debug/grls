@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Карточка ЛП — Документы</title>
+<style>
+  body{font-family:'Segoe UI',Arial,sans-serif;background:#f4f6fb;margin:0;padding:24px;color:#1c2333}
+  .card{background:#fff;border:1px solid #e3e7f0;border-radius:10px;padding:20px 24px;max-width:1200px;margin:0 auto}
+  h1{font-size:22px;margin:4px 0 8px}
+  .crumbs{font-size:12px;color:#8a93a6}
+  .status{display:inline-flex;align-items:center;gap:8px;background:#e8f7ee;color:#177245;
+          border-radius:6px;padding:6px 12px;font-size:13px;font-weight:600}
+  .dot{width:8px;height:8px;border-radius:50%;background:#22a06b}
+  .meta{font-size:12px;color:#5b6472;margin-top:6px;line-height:1.7}
+  .tabs{display:flex;gap:24px;border-bottom:1px solid #e3e7f0;margin:18px 0 0;font-size:14px}
+  .tabs span{padding:10px 2px;color:#5b6472;cursor:pointer}
+  .tabs .active{color:#0d4cd3;font-weight:600;border-bottom:2px solid #0d4cd3}
+  .save-all{display:inline-block;margin:16px 0 8px;color:#0d4cd3;font-size:13px;text-decoration:none}
+  details{border:1px solid #e8ecf4;border-radius:8px;margin:10px 0;background:#fbfcfe}
+  details summary{cursor:pointer;padding:12px 16px;font-weight:600;font-size:14px;list-style:none;
+                  display:flex;justify-content:space-between;align-items:center}
+  details summary::-webkit-details-marker{display:none}
+  details summary:after{content:'▸';color:#8a93a6;transition:.2s}
+  details[open] summary:after{transform:rotate(90deg)}
+  .cnt{font-weight:400;color:#8a93a6;font-size:12px;margin-left:8px}
+  details.sub{border:none;background:#fff;margin:0;border-top:1px solid #eef1f7;border-radius:0}
+  details.sub summary{font-weight:500;font-size:13px;color:#333c4e;padding:10px 16px 10px 32px}
+  .doc{display:flex;align-items:center;gap:12px;padding:10px 16px 10px 48px;border-top:1px solid #f0f2f8;font-size:13px}
+  .doc-ico{font-size:16px}
+  .doc-main{flex:1}
+  .doc-name{font-weight:600;color:#1c2333}
+  .doc-sub{font-size:12px;color:#8a93a6;margin-top:2px}
+  .badge{font-size:11px;border-radius:10px;padding:3px 10px;white-space:nowrap}
+  .b-ok{background:#e8f7ee;color:#177245}
+  .b-sign{background:#eaf0ff;color:#0d4cd3}
+  .b-arch{background:#f0f2f6;color:#6b7482}
+  .b-wait{background:#fff4e5;color:#b26a00}
+  .doc-actions a{color:#0d4cd3;text-decoration:none;font-size:12px;margin-left:12px}
+  .empty{padding:12px 48px;font-size:12px;color:#8a93a6;border-top:1px solid #f0f2f8}
+  .hint{max-width:1200px;margin:12px auto;font-size:12px;color:#8a93a6}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="crumbs">Зарегистрированные ЛП · 1 препарат</div>
+  <h1>Глауламид</h1>
+  <span class="status"><span class="dot"></span> Действующий · 11 сен. 2026 г.</span>
+  <div class="meta">
+    Номер РУ: <b>ЛП-008864</b> &nbsp;·&nbsp; Номер НД: <b>ЛП-008864-110926 от 11.09.2026</b><br>
+    Дата регистрации: 11.09.2026 · Дата окончания действия РУ: 31.12.2027 · Версия РУ № 1 от 11.09.2026
+  </div>
+
+  <div class="tabs"><span>Данные ЛП</span><span>Держатель/Владелец РУ</span><span class="active">Документы</span><span>История</span></div>
+  <a class="save-all" href="#">⬇ Сохранить все файлы</a>
+
+  <!-- 1. РЕГДОСЬЕ -->
+  <details open>
+    <summary>Регистрационное досье (первичная регистрация)<span class="cnt">4 раздела</span></summary>
+    <details class="sub"><summary>Раздел документации административного характера<span class="cnt">9</span></summary>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Заявление о государственной регистрации ЛП</div><div class="doc-sub">№ ЗДЕФ-008864 · 12.05.2026</div></div><span class="badge b-sign">Подписано УКЭП</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Доверенность</div><div class="doc-sub">б/н · 04.05.2026</div></div><span class="badge b-arch">Копия</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Инструкция по медицинскому применению (проект на регистрацию)</div><div class="doc-sub">версия 1 · 12.05.2026</div></div><span class="badge b-arch">Архив</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Макеты первичной и вторичной упаковки</div><div class="doc-sub">версия 1 · 12.05.2026</div></div><span class="badge b-arch">Архив</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    </details>
+    <details class="sub"><summary>Раздел химической, фармацевтической и биологической документации<span class="cnt">3</span></summary>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Документ о фармацевтической субстанции</div><div class="doc-sub">12.05.2026</div></div><span class="badge b-arch">Архив</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Документ, содержащий сведения о ЛП</div><div class="doc-sub">12.05.2026</div></div><span class="badge b-arch">Архив</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    </details>
+    <details class="sub"><summary>Раздел фармакологической, токсикологической документации<span class="cnt">3</span></summary>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Отчёт о токсикологических исследованиях</div><div class="doc-sub">12.05.2026</div></div><span class="badge b-arch">Архив</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    </details>
+    <details class="sub"><summary>Раздел клинической документации<span class="cnt">2</span></summary>
+      <div class="doc"><span class="doc-ico">📄</span><div class="doc-main"><div class="doc-name">Отчёт о клинических исследованиях эффективности и безопасности</div><div class="doc-sub">12.05.2026</div></div><span class="badge b-arch">Архив</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    </details>
+  </details>
+
+  <!-- 2. НД -->
+  <details open>
+    <summary>Нормативная документация (НД)<span class="cnt">2</span></summary>
+    <div class="doc"><span class="doc-ico">📑</span><div class="doc-main"><div class="doc-name">НД, утверждённая Минздравом (штамп с номером и датой)</div><div class="doc-sub">ЛП-008864-110926 от 11.09.2026</div></div><span class="badge b-ok">Действующая</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    <div class="doc"><span class="doc-ico">📑</span><div class="doc-main"><div class="doc-name">Проект НД, согласованный ФГБУ (финальная редакция)</div><div class="doc-sub">согласован 05.09.2026 · УКЭП ФГБУ</div></div><span class="badge b-arch">Архив</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    <div class="empty">История версий НД пуста: изменений/перерегистраций НД не было. Новая версия получит номер ЛП-008864-ДДММГГ по дате нового решения.</div>
+  </details>
+
+  <!-- 3. РУ и выписки -->
+  <details>
+    <summary>Регистрационные удостоверения и выписки<span class="cnt">2</span></summary>
+    <div class="doc"><span class="doc-ico">🏅</span><div class="doc-main"><div class="doc-name">Регистрационное удостоверение (выписка из ГРЛС), версия № 1</div><div class="doc-sub">ЛП-008864 · 11.09.2026 · УКЭП Минздрава</div></div><span class="badge b-ok">Действующее</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    <div class="doc"><span class="doc-ico">🔳</span><div class="doc-main"><div class="doc-name">Выписка из ГРЛС с QR-кодом</div><div class="doc-sub">сформирована 11.09.2026</div></div><span class="badge b-ok">Действующая</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+  </details>
+
+  <!-- 4. Решения -->
+  <details>
+    <summary>Решения и приказы Минздрава<span class="cnt">1</span></summary>
+    <div class="doc"><span class="doc-ico">⚖️</span><div class="doc-main"><div class="doc-name">Решение о государственной регистрации ЛП</div><div class="doc-sub">№ 008864 · 11.09.2026 · УКЭП</div></div><span class="badge b-sign">Подписано</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    <div class="empty">Решений о внесении изменений / подтверждении / отмене пока нет.</div>
+  </details>
+
+  <!-- 5. Изменения -->
+  <details>
+    <summary>Внесение изменений в досье<span class="cnt">цикл 1 · в работе</span></summary>
+    <div class="doc"><span class="doc-ico">📝</span><div class="doc-main"><div class="doc-name">Заявление о внесении изменений (ЗВИ)</div><div class="doc-sub">№ ЗВИ-008864-01 · 20.08.2026</div></div><span class="badge b-wait">На рассмотрении</span><div class="doc-actions"><a>Посмотреть</a></div></div>
+    <div class="doc"><span class="doc-ico">📝</span><div class="doc-main"><div class="doc-name">Пояснительная записка к изменениям</div><div class="doc-sub">20.08.2026</div></div><span class="badge b-wait">На рассмотрении</span><div class="doc-actions"><a>Посмотреть</a></div></div>
+    <div class="doc"><span class="doc-ico">📝</span><div class="doc-main"><div class="doc-name">Инструкция по медицинскому применению — версия 2 (проект)</div><div class="doc-sub">20.08.2026</div></div><span class="badge b-wait">Проект</span><div class="doc-actions"><a>Посмотреть</a></div></div>
+  </details>
+
+  <!-- 6. Подтверждение -->
+  <details>
+    <summary>Подтверждение государственной регистрации (перерегистрация)<span class="cnt">цикл не начат</span></summary>
+    <div class="empty">
+      Состав цикла (пп. 52 ПП 593 / п. 17.4 ПП 441): результаты мониторинга эффективности и безопасности по форме МЗ ·
+      лицензия/GMP (или сертификат GMP ЕАЭС) · результаты мероприятий ПУР (для биологических) ·
+      документы досье, требующие изменений · пошлина.<br>
+      Документы появятся после подачи заявления ЗПДЕФ/ЗПЧС (срок подачи — до 31.12.2027 / за 6 мес. до истечения РУ).
+    </div>
+  </details>
+
+  <!-- 7. Фармаконадзор -->
+  <details>
+    <summary>Фармаконадзор и управление рисками<span class="cnt">1</span></summary>
+    <div class="doc"><span class="doc-ico">🛡️</span><div class="doc-main"><div class="doc-name">План управления рисками, утверждённый при регистрации</div><div class="doc-sub">11.09.2026</div></div><span class="badge b-ok">Действующий</span><div class="doc-actions"><a>Посмотреть</a><a>Скачать</a></div></div>
+    <div class="empty">Периодические отчёты о безопасности и отчёты мониторинга ещё не подавались.</div>
+  </details>
+
+  <!-- 8. Экспертизы -->
+  <details>
+    <summary>Материалы экспертиз<span class="cnt">1</span></summary>
+    <div class="doc"><span class="doc-ico">🔬</span><div class="doc-main"><div class="doc-name">Сводное заключение экспертов ФГБУ «Рекомендовать к регистрации»</div><div class="doc-sub">05.09.2026 · УКЭП ФГБУ</div></div><span class="badge b-sign">Подписано</span><div class="doc-actions"><a>Посмотреть</a></div></div>
+    <div class="empty">Этическая экспертиза не требовалась (КИ в РФ не проводились).</div>
+  </details>
+</div>
+<div class="hint">Макет: разделы сворачиваются кликом по заголовку. Бейджи: зелёный — действующий, синий — подписано УКЭП, оранжевый — в работе, серый — архив.</div>
+</body>
+</html>
